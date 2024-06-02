@@ -3,11 +3,12 @@
   padding: 2rem;
   text-align: center;
   box-sizing: border-box;
+
 }
 
 .App .selection {
-  display: flex;
-  width: auto;
+
+  max-width: 800px;
 }
 
 button {
