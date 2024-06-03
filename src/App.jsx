@@ -13,14 +13,25 @@ function App() {
     <>
       <div className="App">
         <section className="selection">
-          <button onClick={() => setResource("Posts")}>Posts</button>
-          <button onClick={() => setResource("Users")}>Users</button>
-          <button onClick={() => setResource("Comments")}>Comments</button>
+          <div className="container">
+            <button onClick={() => setResource("Posts")}>Posts</button>
+          </div>
+          <div className="container">
+            <button onClick={() => setResource("Users")}>Users</button>
+          </div>
+
+          <div className="container">
+            <button onClick={() => setResource("Comments")}>Comments</button>
+          </div>
         </section>
       </div>
       <h1>{resource}</h1>
       {items.map((item) => {
-        return <div key={item.id}>{item.body || item.name}</div>;
+        return (
+          <div className="content" key={item.id}>
+            {item.body || item.name}
+          </div>
+        );
       })}
     </>
   );

@@ -1,16 +1,57 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  box-sizing: border-box;
+:root {
+  --font-family: 'Karla', sans-serif;
+  --body-bg: #1E1F25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
 
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1F1E1C;
+  color: #E4E3E4;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  background: linear-gradient(115deg, var(--grad-color1), var(--grad-color2), var(--grad-color3), var(--grad-color4), var(--grad-color5));
+  border-radius: 4px;
+}
+
+.container:hover {
+  background: -webkit-linear-gradient(115deg, var(--grad-color1), var(--grad-color2), var(--grad-color3), var(--grad-color4), var(--grad-color5));
+  font-size: 1.5rem;
+}
+
+div button {
+
+  width: 96%;
+  color: #E4E3E4;
+  background-color: #000;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin: 3px;
+  transition: all 200ms ease-in;
+  box-shadow: none;
+  border-width: 3px;
+  border-style: solid;
+  background: black;
 }
 
 .App .selection {
-
-  max-width: 800px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
-button {
-  margin: 0.5rem;
-}
+.content {}
