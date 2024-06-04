@@ -54,4 +54,8 @@ div button {
   justify-content: center;
 }
 
+.active {
+  padding: 2rem;
+}
+
 .content {}
