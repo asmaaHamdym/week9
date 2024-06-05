@@ -34,7 +34,7 @@ body {
 
 div button {
 
-  width: 96%;
+  width: 95%;
   color: #E4E3E4;
   background-color: #000;
   font-family: var(--font-family);
@@ -54,10 +54,6 @@ div button {
   justify-content: center;
 }
 
-.active {
-  padding: 2rem;
-}
-
 .results {
   display: flex;
   flex-direction: column;
@@ -66,9 +62,10 @@ div button {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 500px;
+  min-width: 200px;
   border: 2px solid var(--grad-color5);
   border-radius: 0.5rem;
-  margin: 1rem;
-  padding: 1.5rem 1rem;
+  margin: 0.3rem;
+  padding: 1rem 0.5rem;
 }
