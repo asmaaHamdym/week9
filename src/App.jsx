@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
@@ -33,13 +33,15 @@ function App() {
         </section>
       </div>
       <h1>{resource}</h1>
-      {items.map((item) => {
-        return (
-          <div className="content" key={item.id}>
-            {item.body || item.name}
-          </div>
-        );
-      })}
+      <div className="results">
+        {items.map((item) => {
+          return (
+            <div className="content" key={item.id}>
+              {item.body || item.name}
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }
